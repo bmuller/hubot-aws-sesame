@@ -1,0 +1,27 @@
+{
+  "name": "hubot-aws-sesame",
+  "version": "0.0.0",
+  "description": "Hubot script to open/close access to servers on AWS based on chat presence",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hubot",
+    "hubot-scripts",
+    "aws"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bmuller/hubot-aws-sesame.git"
+  },
+  "author": "Brian Muller <bamuller@gmail.com> (http://findingscience.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sesame": ">= 0.0.1",
+    "node-uuid": ">= 1.4.1"
+  },
+  "scripts": {
+    "prepublish": "coffee -b --no-header -o ./lib/ ./src/*.coffee"
+  }
+}
