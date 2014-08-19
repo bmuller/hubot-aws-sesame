@@ -99,7 +99,7 @@ module.exports = (robot) ->
       # close old connection if this is a new one for the user
       sesame.close oldip if oldip? and sesame.usersWithIp(oldip).length is 0
       # only open new connection if one doesn't already exist
-      sesame.open user.ip unless sesame.usersWithIp(user.ip) > 1
+      sesame.open user.ip unless sesame.usersWithIp(user.ip).length > 1
     robot.send user: user, "You now have access to AWS from #{user.ip}"
     sendKitty robot, res
 
