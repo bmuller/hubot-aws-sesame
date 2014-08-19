@@ -20,7 +20,7 @@ npm install
 ```HUBOT_AWS_SEC_RULES``` should be of the form (spaces are ignored):
 
 <code>
-  <sec group id>: <port start>[ - <port end>][, <port start> - <port end>];
+  &lt;sec group id&gt;: &lt;port start&gt;[ - &lt;port end&gt;][, &lt;port start&gt; - &lt;port end&gt;];
 </code>
 
 For instance, each of the following would work:
