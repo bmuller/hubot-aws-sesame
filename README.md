@@ -17,7 +17,7 @@ npm install
 * HUBOT_AWS_SEC_RULES
 * HUBOT_ROOT_URL
 
-```HUBOT_AWS_SEC_RULES``` should be of the form (spaces are ignored):
+```HUBOT_AWS_SEC_RULES``` should contain the security group(s) that should have access enabled and the port range(s) that should be opened within them.  It should be of the form (spaces are ignored):
 
 <code>
   &lt;sec group id&gt;: &lt;port start&gt;[ - &lt;port end&gt;][, &lt;port start&gt; - &lt;port end&gt;];
