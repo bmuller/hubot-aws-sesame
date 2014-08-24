@@ -105,6 +105,8 @@ module.exports = (robot) ->
 
   robot.enter (msg) ->
     user = robot.brain.userForId msg.message.user.id
+    return if user.last_entered? and (Date.now() - user.last_entered) < 3000
+    user.last_entered = Date.now()
     user.ip_secret = UUID.v4()
     msg.send "#{process.env.HUBOT_ROOT_URL}/hubot/aws-gateway/#{msg.message.user.id}/#{user.ip_secret}.jpg"
 

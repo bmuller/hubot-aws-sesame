@@ -1,6 +1,6 @@
 {
   "name": "hubot-aws-sesame",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Hubot script to open/close access to servers on AWS based on chat presence",
   "main": "lib/index.js",
   "scripts": {
